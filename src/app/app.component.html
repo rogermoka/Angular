@@ -1,7 +1,10 @@
 <!-- <courses></courses>
 <app-author></app-author> -->
 <!-- <app-favorite></app-favorite> -->
-
-<input type="text" [(ngModel)]="title">
+<app-like
+    [likesCount]="tweet.likesCount"
+    [isActived]="tweet.isLiked"
+></app-like>
+<!-- <input type="text" [(ngModel)]="title">
 <br>
-{{ title | titleCase }}
+{{ title | titleCase }} -->
