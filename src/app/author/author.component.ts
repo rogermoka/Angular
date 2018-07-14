@@ -19,13 +19,3 @@ export class AuthorComponent implements OnInit {
   }
 
 }
-
-
-// export class CourseComponent {
-//   title = "List of courses";
-//   courses;
-
-//   constructor(service: CoursesService) {
-//       this.courses = service.getCourses();
-//   }
-// }
