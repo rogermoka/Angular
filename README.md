@@ -1,3 +1,7 @@
+
+[![Build status](https://ci.appveyor.com/api/projects/status/isrrcy264cr7mc6k?svg=true)](https://ci.appveyor.com/project/rogermoka/angular)
+
+
 # HelloWorld
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
