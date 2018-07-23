@@ -1,6 +1,7 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/isrrcy264cr7mc6k?svg=true)](https://ci.appveyor.com/project/rogermoka/angular)
 
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Frogermoka%2FAngular.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Frogermoka%2FAngular?ref=badge_shield)
 
 # HelloWorld
 
