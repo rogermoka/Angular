@@ -13,4 +13,9 @@ test_script:
   - node --version
   - npm test
 
-build: off
+build: on
+
+on_success:
+- curl -s -o copilot https://copilot.blackducksoftware.com/ci/appveyor/scripts/upload
+- bash copilot
+
