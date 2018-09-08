@@ -32,4 +32,5 @@ export class TitleCasePipe implements PipeTransform {
 
     return prepositions.includes(word.toLowerCase());
   }
+
 }

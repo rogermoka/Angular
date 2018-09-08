@@ -1,21 +1,20 @@
-import { Component, OnInit } from '@angular/core';
-import { faCoffee, faStar } from '@fortawesome/free-solid-svg-icons';
+import { Component, OnInit, Input, Output, EventEmitter, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'app-favorite',
+  selector: 'favorite',
   templateUrl: './favorite.component.html',
   styleUrls: ['./favorite.component.css']
 })
-export class FavoriteComponent implements OnInit {
+export class FavoriteComponent {
+  @Input('isFavorite') isSelected: boolean;
+  @Output('change') click = new EventEmitter();
 
-  isFavorite: boolean = false;
-
-  constructor() { }
-
-  ngOnInit() {
+  onClick() { 
+    this.isSelected = !this.isSelected;
+    this.click.emit({ newValue: this.isSelected });
   }
+}
 
-    onClick() {
-      this.isFavorite = !this.isFavorite;
-    }
+export interface FavoriteChangedEventArgs {
+  newValue: boolean
 }

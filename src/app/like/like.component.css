@@ -1,8 +1,9 @@
-.fa {
+
+.glyphicon { 
     color: #ccc;
     cursor: pointer;
 }
 
-.highlighted {
+.highlighted { 
     color: deeppink;
 }

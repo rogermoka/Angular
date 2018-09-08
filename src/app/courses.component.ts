@@ -1,23 +1,11 @@
 import { Component } from '@angular/core';
-import { CoursesService } from './courses.service';
 
 @Component({
     selector: 'courses',
     template: `
-    <button class="btn btn-primary">coco</button>
-    <h2>{{ title }}</h2>
-        <ul>
-            <li *ngFor="let course of courses">
-                {{ course }}
-            </li>
-        </ul>
+        {{ text | summary:10 }}
     `
 })
-export class CourseComponent {
-    title = "List of courses";
-    courses;
-
-    constructor(service: CoursesService) {
-        this.courses = service.getCourses();
-    }
+export class CoursesComponent {
+    text = `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.`
 }

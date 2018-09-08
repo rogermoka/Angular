@@ -1,13 +1,15 @@
+
 <div class="zippy">
-  <div class="zippy-heading"
-  [class.expanded]="isExpanded"
-  (click)="toggle()"
-  >
+  <div 
+    class="zippy-heading"
+    [class.expanded]="isExpanded"
+    (click)="toggle()"
+    >
     {{ title }}
-    <span class="fas"
+    <span class="glyphicon"
       [ngClass]="{
-        'fa-chevron-up': isExpanded,
-        'fa-chevron-down': !isExpanded
+        'glyphicon-chevron-up': isExpanded,
+        'glyphicon-chevron-down': !isExpanded
       }"
     ></span>
   </div>

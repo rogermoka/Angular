@@ -1,13 +1,9 @@
 import { Injectable } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class AuthorsService {
-  
+
   getAuthors() {
-    return ["CCCC", "AAA", "5784521"];
+    return ["author1", "author2", "author3"];
   }
-  
-  constructor() { }
 }
